@@ -1,0 +1,34 @@
+exp_name: default
+exp_num: 3
+
+train_kwargs:
+  batch_size: 1024
+  eval_expression_num: 48
+  data_batch_size: 1000
+  record_expression_num: 16
+
+instance_kwargs:
+  instance_type: setcover
+  train_num: 1000
+  valid_num: 400
+
+expression_kwargs:
+  math_list: simple
+  var_list: full
+
+dso_agent_kwargs:
+  min_length: 4
+  max_length: 64
+  hidden_size: 128
+  num_layers: 2
+
+rl_algo_kwargs:
+  class: PPOAlgo
+  kwargs:
+    lr_actor: 5e-5
+    K_epochs: 8
+    entropy_coef: 0.05
+    entropy_gamma: 0.9
+    entropy_decrease: false
+    lr_decrease: false
+    decrease_period: 700

@@ -1,0 +1,13 @@
+exp_name: default
+
+eval_kwargs:
+  n_processing : 4
+  time_limit: 3000
+  gap_limit: 0.0
+  use_temp_results: false
+
+instance_kwargs:
+  instance_type: setcover
+  dataset_type: default
+  dataset_prefix: transfer
+  n_instance : 80

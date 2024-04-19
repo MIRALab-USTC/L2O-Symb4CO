@@ -1,0 +1,9 @@
+__pycache__
+data/
+trained_models/
+test_results/
+data
+eval_results/
+.vscode/*
+outputs/*
+results/*
